@@ -1,4 +1,4 @@
-//Functions other than the last two functions were implemented by me
+//Last two functions were implemented by me
 
 #include <cassert>  // Provides assert
 #include <cstdlib>  // Provides NULL, rand
@@ -154,7 +154,6 @@ bag<Item> operator +(const bag<Item>& b1, const bag<Item>& b2)
 }
 
 
-//The two functions below were implemented by me 
 
 //Postcondition: Prints the items from x to item before y. Otherwise if no x is in the bag,
 //then its prints "nothing". In the range of x to the end of the list, 
@@ -204,7 +203,7 @@ void bag<Item>::print_value_range(const Item& x, const Item& y)
     }
 	else if(answer == "nothing")
 	{
-		std::cout << answer << " ";
+		std::cout << "(nothing)" << " ";
 		std::cout << std::endl;
 	}	
 	else 
